@@ -1,10 +1,10 @@
 ASPHALT DON WEBSITE
-Static website files for Render.
+Static website hosted on Render.
+Repository: https://github.com/dramfelderhausservice-create/asphalt-don-website
+Live URL: https://asphalt-don-website.onrender.com
 
-Before launch:
-1. Replace DEINE-DOMAIN.de in index.html, robots.txt and sitemap.xml with the final domain (or Render URL).
-2. Add direct official artist profile links for Spotify, Apple Music and Amazon Music.
-3. Add legally required Impressum and Datenschutz pages with the operator's full details.
-4. Upload this folder to a Git repository and connect it to Render as a Static Site.
-   Build command: (leave empty)
-   Publish directory: .
+Music catalogue:
+The site links each title to a Spotify search. Track-level Spotify URLs should replace these searches once the official artist URL and individual track links are verified.
+
+Before full legal launch:
+Add legally required Impressum and Datenschutz pages with the operator's complete details.
