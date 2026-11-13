@@ -1,19 +1,20 @@
-ASPHALT DON – SONGWRITER UPDATE
+ASPHALT DON – RECHTLICHES WEBSITE-UPDATE
 
-Enthaltene Dateien zum Ersetzen im GitHub-Repository:
+Enthaltene Dateien (im Root-Verzeichnis des GitHub-Repositories ersetzen):
 - index.html
 - style.css
+- impressum.html
+- datenschutz.html
+- robots.txt
+- sitemap.xml
+- README.txt
 
-Die Seite stellt Heinz-Joachim Freimuth als Songwriter hinter dem Musikprojekt Asphalt Don vor.
-Das offizielle Spotify-Künstlerprofil bleibt eingebettet.
+Das Impressum enthält die vom Betreiber für eine öffentliche Veröffentlichung angegebene Anschrift.
+Die Datenschutzerklärung beschreibt die derzeit bekannte Website-Konfiguration: Render-Hosting, Umami Cloud, Spotify-Player (wird erst nach aktivem Klick geladen) und E-Mail-Kontakt.
+
+Vor bzw. unmittelbar nach Veröffentlichung bitte in Umami unter Settings -> Account die tatsächlich eingestellte Datenregion kontrollieren und die Anbieterbedingungen/Vertragsunterlagen prüfen. Die Datenschutzerklärung ist kein Ersatz für eine individuelle Rechtsprüfung.
 
 GitHub: https://github.com/dramfelderhausservice-create/asphalt-don-website
-Live-Adresse: https://asphalt-don-website.onrender.com
-
-Nach dem Ersetzen der beiden Dateien auf dem main-Branch und dem Klick auf „Änderungen übernehmen“ sollte Render automatisch neu veröffentlichen.
-
-Hinweis: Die sichtbare Songwriter-Zuordnung ist eine Künstlerangabe für die Website. Offizielle Songwriter-Credits je Track müssen gegebenenfalls zusätzlich bei Distributor/Label in den Metadaten gepflegt werden.
-
-
-UMAMI VISITOR ANALYTICS
-The Umami tracking script is included in index.html using the website ID provided by the site owner. Visitor statistics are available only in the owner's Umami dashboard.
+Website: https://asphalt-don-website.onrender.com
+Spotify: https://open.spotify.com/artist/6X4e4WpzbHg0svuTapWIrL
+Kontakt: asphaltdon@gmx.de

@@ -86,12 +86,13 @@
       <p class="section-lead">Das offizielle Spotify-Künstlerprofil von Asphalt Don – direkt hier eingebunden.</p>
 
       <div class="spotify-embed-wrap">
-        <iframe
-          title="Asphalt Don auf Spotify – offizielles Künstlerprofil"
-          src="https://open.spotify.com/embed/artist/6X4e4WpzbHg0svuTapWIrL?utm_source=generator&theme=0"
-          width="100%" height="450" frameborder="0"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"></iframe>
+        <div class="spotify-consent" id="spotify-consent">
+          <p><strong>Spotify-Player</strong></p>
+          <p>Der Player wird erst geladen, wenn du ihn aktiv einschaltest. Beim Laden wird eine Verbindung zu Spotify hergestellt. Dabei können technische Daten wie deine IP-Adresse an Spotify übermittelt werden.</p>
+          <button class="spotify-load" id="load-spotify" type="button">Einwilligen und Spotify-Player laden</button>
+          <p class="spotify-consent-note">Alternativ kannst du <a href="https://open.spotify.com/artist/6X4e4WpzbHg0svuTapWIrL" target="_blank" rel="noopener noreferrer">Spotify direkt öffnen</a>. Durch Neuladen dieser Seite wird der Player wieder entfernt.</p>
+        </div>
+        <div id="spotify-frame-holder"></div>
       </div>
       <p class="spotify-link-row"><a class="spotify-main" href="https://open.spotify.com/artist/6X4e4WpzbHg0svuTapWIrL" target="_blank" rel="noopener noreferrer">OFFIZIELLES SPOTIFY-PROFIL ÖFFNEN ↗</a></p>
 
@@ -156,8 +157,27 @@
   <footer>
     <a class="brand footer-brand" href="#start"><span class="crown">♛</span><span>ASPHALT DON</span></a>
     <p>© <span id="year">2026</span> Asphalt Don · Musik aus dem Leben</p>
-    <p class="footer-note">Impressum und Datenschutzhinweise müssen vor dem öffentlichen Betrieb mit den vollständigen Betreiberangaben ergänzt werden.</p>
+    <nav class="footer-links" aria-label="Rechtliche Informationen">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutzerklärung</a>
+    </nav>
   </footer>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("load-spotify").addEventListener("click", function () {
+      const frame = document.createElement("iframe");
+      frame.title = "Asphalt Don auf Spotify – offizielles Künstlerprofil";
+      frame.src = "https://open.spotify.com/embed/artist/6X4e4WpzbHg0svuTapWIrL?utm_source=generator&theme=0";
+      frame.width = "100%";
+      frame.height = "450";
+      frame.loading = "lazy";
+      frame.allow = "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture";
+      frame.setAttribute("frameborder", "0");
+      frame.style.border = "0";
+      frame.style.borderRadius = "8px";
+      document.getElementById("spotify-frame-holder").replaceChildren(frame);
+      document.getElementById("spotify-consent").hidden = true;
+    });
+  </script>
 </body>
 </html>
